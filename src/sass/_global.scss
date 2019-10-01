@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-text;
+  font-size: $font-size-medium;
+}
+
+a {
+  &:link {
+  font-weight: $font-light;
+  color: $color-blue;
+  text-decoration: none;
+  }
+
+  &:hover {
+    color: $color-orange-1;
+    text-decoration: none;
+  }
+}
+
+.big-link {
+  font-size: $font-size-regular;
+}
+
+p {
+  font-weight: $font-light;
+  color: $color-dark;
+  line-height: 1.5;
+}
+
+ol, ul {
+  li {
+    font-weight: $font-light;
+    line-height: 1.5;
+  }
+}
+

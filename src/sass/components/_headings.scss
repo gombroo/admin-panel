@@ -1,1 +1,21 @@
+.heading {
+  &__page {
+    font-size: $font-size-normal;
+    font-weight: $font-regular;
+    color: $color-grey-2;
+    text-transform: uppercase;
+  }
 
+  &__section {
+    font-size: $font-size-normal;
+    font-weight: $font-bold;
+    color: $color-grey-2;
+  }
+  &__line {
+    font-size: $font-size-normal;
+    font-weight: $font-bold;
+    color: $color-grey-2;
+    line-height: 2;
+    border-bottom: $border;
+  }
+}

@@ -4,10 +4,12 @@
 
 @import "normalize";
 @import "layout";
+@import "global";
 
 /* Components */
 @import "components/buttons";
 @import "components/headings";
+@import "components/tables";
 
 /* Sections */
 @import "sections/topbar";
@@ -17,4 +19,4 @@
 
 
 /* Pages / Views */
-@import "pages/main";
+@import "pages/dashboard";
