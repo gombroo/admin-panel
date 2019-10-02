@@ -11,19 +11,15 @@ body {
 
 a {
   &:link {
-  font-weight: $font-light;
-  color: $color-blue;
-  text-decoration: none;
+    font-weight: $font-light;
+    color: $color-blue;
+    text-decoration: none;
   }
 
   &:hover {
     color: $color-orange-1;
     text-decoration: none;
   }
-}
-
-.big-link {
-  font-size: $font-size-regular;
 }
 
 p {
@@ -38,4 +34,9 @@ ol, ul {
     line-height: 1.5;
   }
 }
+
+.big-link {
+  font-size: $font-size-regular;
+}
+
 

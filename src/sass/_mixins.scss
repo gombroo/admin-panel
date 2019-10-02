@@ -1,0 +1,17 @@
+/* Boostrap Grid */
+
+@mixin grid($size) {
+  @for $i from 1 through 12 {
+
+    $width: ((100 / 12) * $i) + "%";
+
+    .col-#{$size}-#{$i} {
+      flex: 0 0 $width;
+      max-width: $width;
+    }
+
+    .col-#{$size}-offset-#{$i} {
+      margin-left: $width;
+    }
+  }
+}
