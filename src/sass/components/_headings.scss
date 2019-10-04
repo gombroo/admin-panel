@@ -1,3 +1,28 @@
+
+.section-header {
+  font-size: $font-size-normal;
+  font-weight: $font-medium;
+  color: $color-grey-2;
+  text-transform: uppercase;
+}
+
+.section-header-line {
+  font-size: $font-size-normal;
+  font-weight: $font-medium;
+  color: $color-grey-2;
+  padding: 20px 0;
+  text-transform: uppercase;
+  border-bottom: $border;
+}
+
+/*
+.page-header {
+  font-size: $font-size-normal;
+  font-weight: $font-regular;
+  color: $color-grey-2;
+  text-transform: uppercase;
+}
+
 .heading {
   &__page {
     font-size: $font-size-normal;
@@ -19,3 +44,4 @@
     border-bottom: $border;
   }
 }
+*/

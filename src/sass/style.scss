@@ -10,13 +10,14 @@
 @import "components/buttons";
 @import "components/headings";
 @import "components/tables";
+//@import "components/containers";
 
 /* Sections */
 @import "sections/topbar";
+@import "sections/main";
 @import "sections/sidebar";
 @import "sections/statistics";
 @import "sections/links";
-
 
 /* Pages / Views */
 @import "pages/dashboard";
