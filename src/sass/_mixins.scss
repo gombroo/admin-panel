@@ -3,7 +3,7 @@
 @mixin grid($size) {
   @for $i from 1 through 12 {
 
-    $width: ((100 / 12) * $i) + "%";
+    $width: ((100% / 12) * $i);
 
     .col-#{$size}-#{$i} {
       flex: 0 0 $width;
@@ -15,4 +15,3 @@
     }
   }
 }
-

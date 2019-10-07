@@ -1,0 +1,24 @@
+.stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  width: 70%;
+
+  &__column {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: $border;
+
+    &--title {
+      font-size: $font-size-normal;
+      font-weight: $font-medium;
+      color: $color-grey-2;
+    }
+    &--number {
+      color: $color-dark;
+    }
+  }
+}
+
+

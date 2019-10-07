@@ -1,0 +1,44 @@
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  padding-bottom: 20px;
+  border-bottom: $border;
+
+  &__input {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border: $border;
+    border-radius: 4px;
+    margin-right: 10px;
+
+
+    &--start {
+      width: 200px;
+      padding: 10px 20px 10px 12px;
+
+      input {
+        border: 0;
+        color: $color-dark;
+      }
+    }
+
+    &--end {
+      padding: 10px 0 10px 10px;
+      width: 160px;
+      border-left: $border;
+
+      input {
+        border: 0;
+        color: $color-dark;
+      }
+    }
+
+    &--icon {
+      padding-right: 10px !important;
+      color: $color-dark;
+    }
+  }
+}

@@ -1,11 +1,9 @@
 .btn {
   font-weight: $font-light;
-  color: $color-white;
   text-align: center;
   vertical-align: middle;
-  background-color: $color-dark;
   border: none;
-  padding: 13px;
+  padding: 12px 16px;
   border-radius: 3px;
   cursor: pointer;
   transition: $transition;
@@ -13,24 +11,85 @@
   &:hover {
     color: $color-white;
   }
-}
 
-.btn-one {
-  background-color: $color-orange-1;
+  &__one {
+    background-color: $color-orange-1;
+    color: $color-white;
 
-  &:hover {
-    background-color: $color-orange-2;
+    &:hover {
+      background-color: $color-orange-2;
+    }
+
+
   }
-}
 
-.btn-two {
-  background-color: $color-grey-1;
+  &__two {
+    background-color: $color-grey-1;
+    color: $color-white;
 
-  &:hover {
-    background-color: $color-grey-2;
+    &:hover {
+      background-color: $color-grey-2;
+    }
   }
-}
 
-.btn-three {
-  background-color: $color-grey-3;
+  &__three {
+    background-color: $color-grey-3;
+    color: $color-white;
+
+    span {
+      padding: 10px 5px 0 0;
+    }
+  }
+
+  &__dot {
+    &--blue {
+      color: $color-grey-1;
+      background-color: $color-grey-3;
+
+      i {
+        color: $color-blue;
+        padding-right: 10px;
+      }
+
+      &:hover {
+        color: $color-blue;
+        background-color: $color-white;
+      }
+    }
+
+    &--orange {
+      color: $color-grey-1;
+      background-color: $color-grey-3;
+
+      i {
+        color: $color-orange-1;
+        padding-right: 10px;
+      }
+
+      &:hover {
+        color: $color-orange-1;
+        background-color: $color-white;
+      }
+    }
+
+    &--green {
+      color: $color-grey-1;
+      background-color: $color-grey-3;
+
+      i {
+        color: $color-green-2;
+        padding-right: 10px;
+      }
+
+      &:hover {
+        color: $color-green-1;
+        background-color: $color-white;
+      }
+    }
+  }
+
+  &__menu {
+    background-color: $color-dark;
+    color: $color-grey-3;
+  }
 }
