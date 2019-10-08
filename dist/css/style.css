@@ -4762,12 +4762,15 @@ body {
   height: 100vh;
   z-index: 1;
   background: #191919;
-  left: -130px;
   transition: all 500ms linear;
 }
 
 #sidebar-move.active {
-  left: 0px;
+  left: -130px;
+}
+
+#sidebar-move.active .menu__item--title {
+  display: none;
 }
 
 .stats {

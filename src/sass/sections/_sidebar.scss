@@ -7,10 +7,14 @@
   height: 100vh;
   z-index: 1;
   background: $color-menu;
-  left: -130px;
+
   transition: all 500ms linear;
 }
 
 #sidebar-move.active {
-  left: 0px;
+  left: -130px;
+
+  .menu__item--title {
+    display: none;
+  }
 }
