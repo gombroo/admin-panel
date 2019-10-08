@@ -15,10 +15,12 @@
       font-weight: $font-medium;
       color: $color-grey-2;
     }
+
     &--number {
       color: $color-dark;
     }
   }
 }
-
-
+.graph {
+  padding: 2em 0 1em 0;
+}

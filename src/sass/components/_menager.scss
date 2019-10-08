@@ -1,0 +1,19 @@
+.manager {
+  padding-top: 1.2em;
+  border-top: 1px solid $color-dark;
+
+  &__title {
+    color: $color-grey-2;
+    font-weight: $font-medium;
+    text-transform: uppercase;
+    padding-left: 1.3em;
+  }
+
+  &__name {
+    position: absolute;
+    top: 13px;
+    padding-left: 10px;
+    color: $color-blue;
+    font-weight: $font-regular;
+  }
+}

@@ -1,6 +1,6 @@
 
 @import "variables";
-@import "mixins";
+// @import "mixins";
 
 @import "normalize";
 @import "global";
@@ -14,7 +14,7 @@
 @import "components/datepicker";
 @import "components/branding";
 @import "components/menu";
-@import "components/stats";
+@import "components/menager";
 
 /* Sections */
 @import "sections/topbar";

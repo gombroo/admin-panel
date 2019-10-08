@@ -18,7 +18,7 @@
   <!-- TOPBAR -->
   <section class="topbar">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-12">
         <ul>
           <li class="topbar__item">
             <a href="#">
@@ -53,7 +53,7 @@
   <!-- SIDEBAR -->
   <section class="sidebar">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-12">
         <div class="branding">
           <div class="logo"><a href="#"><img src="images/logo.png"></a></div>
           <a href="#">
@@ -104,17 +104,19 @@
             </a>
           </li>
         </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
         <div class="manager">
-          <div class="col-12 manager-title">
-            <h3>Your manager</h3>
-          </div>
-          <div class="col-12 manager-photo">
-            <a href="#">
-              <span class="dot"></span>
-              <img src="images/avatar.png" />
-              <span class="user-name">Mikhael E.</span>
-            </a>
-          </div>
+          <h4 class="manager__title">Your manager</h4>
+        </div>
+        <div class="col-12 manager__photo">
+          <a href="#">
+            <span class="dot"></span>
+            <img src="images/avatar.png" />
+            <span class="manager__name">Mikhael E.</span>
+          </a>
         </div>
       </div>
     </div>
@@ -126,7 +128,11 @@
 
     <!-- SECTION STATISTICS -->
     <section class="statistics section-box">
-      <h1 class="section__header--line">General Statistics</h1>
+      <div class="row">
+        <div class="col-12">
+          <h1 class="section__header--line">General Statistics</h1>
+        </div>
+      </div>
       <div class="date">
         <form class="date__input">
           <div class="date__input--start"><input type="text" value="21.01.2019"></div>
@@ -159,12 +165,26 @@
         </div>
       </div>
 
-      <div class="container-fluid">
-        <h2 class="section__subtitle">H2 section subtitle</h2>
-        <div class="col-md-10">
-          <button class="btn btn__dot--blue"><i class="fa fa-circle"></i>Signups</button>
-          <button class="btn btn__dot--orange"><i class="fa fa-circle"></i>FTD</button>
-          <button class="btn btn__dot--green"><i class="fa fa-circle"></i>Earned</button>
+      <div class="container graph">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="section__subtitle">Earnings chart</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-10">
+            <button class="btn btn__dot--blue"><i class="fa fa-circle"></i>Signups</button>
+            <button class="btn btn__dot--orange"><i class="fa fa-circle"></i>FTD</button>
+            <button class="btn btn__dot--green"><i class="fa fa-circle"></i>Earned</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
           <div class="graph">
             <img src="images/chart.png" alt="Chart" />
           </div>
@@ -172,70 +192,71 @@
       </div>
     </section>
 
-
     <!-- SECTION LINKS -->
     <section class="links section-box">
-      <div class="container-fluid">
-
-        <div class="row">
-          <div class="col-md-8">
-            <h1 class="section__header--line">Links</h1>
-            <button class="btn btn__one">+ add new</button>
-            <table class="table">
-              <tbody>
-                <tr class="table-row">
-                  <td class="table-cell title">Homepage</td>
-                  <td class="table-cell address">http://homepage.com</td>
-                  <td class="table-cell">
-                    <div class="overlay">
-                      <!--<div class="empty-cell"></div>-->
-                      <a href="#"><span class="icon-links"></span></a>
-                      <a href="#"><span class="icon-trash"></span></a>
-                    </div>
-                  </td>
-                </tr>
-                <tr class="table-row">
-                  <td class="table-cell title">Homepage</td>
-                  <td class="table-cell address">http://homepage.com</td>
-                  <td class="table-cell">
-                    <div class="overlay">
-                      <!--<div class="empty-cell"></div>-->
-                      <a href="#"><span class="icon-links"></span></a>
-                      <a href="#"><span class="icon-trash"></span></a>
-                    </div>
-                  </td>
-                </tr>
-                <tr class="table-row">
-                  <td class="table-cell title">Homepage</td>
-                  <td class="table-cell address">http://homepage.com</td>
-                  <td class="table-cell">
-                    <div class="overlay">
-                      <!--<div class="empty-cell"></div>-->
-                      <a href="#"><span class="icon-links"></span></a>
-                      <a href="#"><span class="icon-trash"></span></a>
-                    </div>
-                  </td>
-                </tr>
-                <tr class="table-row">
-                  <td class="table-cell title">Homepage</td>
-                  <td class="table-cell address">http://homepage.com</td>
-                  <td class="table-cell">
-                    <div class="overlay">
-                      <!--<div class="empty-cell"></div>-->
-                      <a href="#"><span class="icon-links"></span></a>
-                      <a href="#"><span class="icon-trash"></span></a>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <button class="btn btn__one">+ add new</button>
-          </div>
+      <div class="row">
+        <div class="col-12">
+          <h1 class="section__header--line">Links</h1>
+        </div>
+      </div>
+      <div class="row graph">
+        <div class="col-12">
+          <button class="btn btn__one">+ add new</button>
+          <table class="table">
+            <tbody>
+              <tr class="table-row">
+                <td class="table-cell title">Homepage</td>
+                <td class="table-cell address">http://homepage.com</td>
+                <td class="table-cell">
+                  <div class="overlay">
+                    <!--<div class="empty-cell"></div>-->
+                    <a href="#"><span class="icon-links"></span></a>
+                    <a href="#"><span class="icon-trash"></span></a>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-cell title">Homepage</td>
+                <td class="table-cell address">http://homepage.com</td>
+                <td class="table-cell">
+                  <div class="overlay">
+                    <!--<div class="empty-cell"></div>-->
+                    <a href="#"><span class="icon-links"></span></a>
+                    <a href="#"><span class="icon-trash"></span></a>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-cell title">Homepage</td>
+                <td class="table-cell address">http://homepage.com</td>
+                <td class="table-cell">
+                  <div class="overlay">
+                    <!--<div class="empty-cell"></div>-->
+                    <a href="#"><span class="icon-links"></span></a>
+                    <a href="#"><span class="icon-trash"></span></a>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-cell title">Homepage</td>
+                <td class="table-cell address">http://homepage.com</td>
+                <td class="table-cell">
+                  <div class="overlay">
+                    <!--<div class="empty-cell"></div>-->
+                    <a href="#"><span class="icon-links"></span></a>
+                    <a href="#"><span class="icon-trash"></span></a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="btn btn__one">+ add new</button>
         </div>
       </div>
 
     </section>
 
+    <!-- END MAIN -->
   </div>
 
 
