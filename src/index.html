@@ -51,13 +51,13 @@
 
 
   <!-- SIDEBAR -->
-  <section class="sidebar">
+  <section class="sidebar" id="sidebar-move">
     <div class="row">
       <div class="col-12">
         <div class="branding">
           <div class="logo"><a href="#"><img src="images/logo.png"></a></div>
           <a href="#">
-            <div class="hamburger"></div>
+            <div class="hamburger" onclick="toggleSidebar()"></div>
           </a>
         </div>
         <ul class="menu">
@@ -258,3 +258,12 @@
 
     <!-- END MAIN -->
   </div>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar-move").classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>

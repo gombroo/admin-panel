@@ -1,4 +1,5 @@
-.sidebar {
+.sidebar,
+#sidebar-move {
   position: fixed;
   top: 0;
   left: 0;
@@ -6,4 +7,10 @@
   height: 100vh;
   z-index: 1;
   background: $color-menu;
+  left: -130px;
+  transition: all 500ms linear;
+}
+
+#sidebar-move.active {
+  left: 0px;
 }
