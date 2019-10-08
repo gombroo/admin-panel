@@ -375,11 +375,6 @@ ul li {
   line-height: 1.5;
 }
 
-.links-inner {
-  -ms-flex-pack: center;
-      justify-content: center;
-}
-
 /* Grid: flexbox */
 .justify-content-start {
   -ms-flex-pack: start !important;
@@ -4758,7 +4753,8 @@ body {
   width: calc(100% - 200px);
 }
 
-.sidebar {
+.sidebar,
+#sidebar-move {
   position: fixed;
   top: 0;
   left: 0;
@@ -4766,6 +4762,12 @@ body {
   height: 100vh;
   z-index: 1;
   background: #191919;
+  left: -130px;
+  transition: all 500ms linear;
+}
+
+#sidebar-move.active {
+  left: 0px;
 }
 
 .stats {
