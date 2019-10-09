@@ -50,54 +50,54 @@
   </section>
 
   <!-- SIDEBAR -->
-  <section class="sidebar" id="sidebar-move">
+  <section class="sidebar" id="sidebar">
     <div class="row">
       <div class="col-12">
         <div class="branding">
-          <div class="logo"><a href="#"><img src="images/logo.png"></a></div>
+          <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
           <a href="#">
-            <div class="hamburger" onclick="toggleSidebar()"></div>
+            <div id="hamburger" class="hamburger"></div>
           </a>
         </div>
         <ul class="menu">
           <li class="menu__item">
-            <a href="#" class="menu__link">
+            <a href="#general" class="menu__link">
               <span class="icon-general menu__item--icon"></span>
               <span class="menu__item--title">General</span>
             </a>
           </li>
           <li class="menu__item">
-            <a href="#">
+            <a href="#details" class="menu__link">
               <span class="icon-details menu__item--icon"></span>
               <span class="menu__item--title">Details</span>
             </a>
           </li>
           <li class="menu__item">
-            <a href="#">
+            <a href="#banners" class="menu__link">
               <span class="icon-banners menu__item--icon"></span>
               <span class="menu__item--title">Banners</span>
             </a>
           </li>
           <li class="menu__item">
-            <a href="#">
+            <a href="#links" class="menu__link">
               <span class="icon-links menu__item--icon"></span>
               <span class="menu__item--title">Links</span>
             </a>
           </li>
           <li class="menu__item">
-            <a href="#">
+            <a href="#data" class="menu__link">
               <span class="icon-personaldata menu__item--icon"></span>
               <span class="menu__item--title">Personal data</span>
             </a>
           </li>
           <li class="menu__item">
-            <a href="#">
+            <a href="#payout" class="menu__link">
               <span class="icon-payout menu__item--icon"></span>
               <span class="menu__item--title">Payout</span>
             </a>
           </li>
           <li class="menu__item">
-            <a href="#">
+            <a href="#postback" class="menu__link">
               <span class="icon-postback menu__item--icon"></span>
               <span class="menu__item--title">Postback</span>
             </a>
@@ -121,15 +121,14 @@
     </div>
   </section>
 
-
   <!-- MAIN -->
-  <div class="main">
+  <div class="main" id="main">
 
-    <!-- SECTION STATISTICS -->
+    <!-- SECTION STATISTICS  -->
     <section class="statistics section-box">
       <div class="row">
         <div class="col-12">
-          <h1 class="section__header--line">General Statistics</h1>
+          <h1 class="section__header--line">General STATISTICS</h1>
         </div>
       </div>
       <div class="date">
@@ -140,53 +139,41 @@
         </form>
         <button class="btn btn__one icon-refresh"></button>
       </div>
-
-      <div class="container">
-        <div class="row stats">
-          <div class="col-md-5 stats__column">
-            <span class="stats__column--title">Visit Signups</span>
-            <span class="stats__column--number">124</span>
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div class="row stats">
+            <div class="col-md-5 stats__column">
+              <span class="stats__column--title">Visit Signups</span>
+              <span class="stats__column--number">124</span>
+            </div>
+            <div class="col-md-5 stats__column">
+              <span class="stats__column--title">New deposit</span>
+              <span class="stats__column--number">564</span>
+            </div>
           </div>
-          <div class="col-md-5 stats__column">
-            <span class="stats__column--title">New deposit</span>
-            <span class="stats__column--number">564</span>
-          </div>
-        </div>
-        <div class="row stats">
-          <div class="col-md-5 stats__column">
-            <span class="stats__column--title">FTD</span>
-            <span class="stats__column--number">445</span>
-          </div>
-          <div class="col-md-5 stats__column">
-            <span class="stats__column--title">Turn Over</span>
-            <span class="stats__column--number">432</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="container graph">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="section__subtitle">Earnings chart</h2>
+          <div class="row stats">
+            <div class="col-md-5 stats__column">
+              <span class="stats__column--title">FTD</span>
+              <span class="stats__column--number">445</span>
+            </div>
+            <div class="col-md-5 stats__column">
+              <span class="stats__column--title">Turn Over</span>
+              <span class="stats__column--number">432</span>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-10">
-            <button class="btn btn__dot--blue"><i class="fa fa-circle"></i>Signups</button>
-            <button class="btn btn__dot--orange"><i class="fa fa-circle"></i>FTD</button>
-            <button class="btn btn__dot--green"><i class="fa fa-circle"></i>Earned</button>
-          </div>
+      <div class="row earnings">
+        <div class="col-md-8 offset-md-2">
+          <h1 class="section__subtitle">Earnings Chart</h1>
         </div>
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="graph">
-            <img src="images/chart.png" alt="Chart" />
-          </div>
+        <div class="col-md-8 offset-md-2 links-button">
+          <button class="btn btn__dot--blue"><i class="fa fa-circle"></i>Signups</button>
+          <button class="btn btn__dot--orange"><i class="fa fa-circle"></i>FTD</button>
+          <button class="btn btn__dot--green"><i class="fa fa-circle"></i>Earned</button>
+        </div>
+        <div class="col-md-8 offset-md-2 earnings-chart">
+          <img src="images/chart.png" />
         </div>
       </div>
     </section>
@@ -194,13 +181,15 @@
     <!-- SECTION LINKS -->
     <section class="links section-box">
       <div class="row">
-        <div class="col-sm-9 col-md-12 col-lg-8">
+        <div class="col-12">
           <h1 class="section__header--line">Links</h1>
         </div>
       </div>
-      <div class="row graph">
-        <div class="col-12">
+      <div class="row">
+        <div class="col-md-8 offset-md-2 links-button">
           <button class="btn btn__one">+ add new</button>
+        </div>
+        <div class="col-md-8 offset-md-2">
           <table class="table">
             <tbody>
               <tr class="table-row">
@@ -249,20 +238,16 @@
               </tr>
             </tbody>
           </table>
+        </div>
+        <div class="col-md-8 offset-md-2 links-button">
           <button class="btn btn__one">+ add new</button>
         </div>
       </div>
-
     </section>
 
     <!-- END MAIN -->
   </div>
-
-  <script>
-    function toggleSidebar() {
-      document.getElementById("sidebar-move").classList.toggle('active');
-    }
-  </script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
