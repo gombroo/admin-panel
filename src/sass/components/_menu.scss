@@ -6,10 +6,20 @@
     list-style: none;
   }
 
+  &__link {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+
   &__item {
+    width: 200px;
     padding: .7em;
     font-size: $font-size-normal;
     border-left: 4px solid $color-menu;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
 
     &--icon {
       color: $color-grey-2;

@@ -1,13 +1,12 @@
 .stats {
   display: flex;
   justify-content: space-between;
-  padding: 5px;
-  width: 70%;
+  margin: 0 auto;
 
   &__column {
     display: flex;
     justify-content: space-between;
-    padding: 5px;
+    padding: 10px;
     border-bottom: $border;
 
     &--title {
@@ -21,6 +20,16 @@
     }
   }
 }
-.graph {
-  padding: 2em 0 1em 0;
+
+.earnings {
+  padding: 4em 0;
+
+  &-chart img {
+    width: 100%;
+  }
+}
+
+.links-button {
+  text-align: center;
+  padding: 1em 0 1.5em 0;
 }

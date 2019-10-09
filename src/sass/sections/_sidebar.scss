@@ -1,20 +1,36 @@
 .sidebar,
-#sidebar-move {
+#sidebar {
   position: fixed;
   top: 0;
   left: 0;
   width: 200px;
-  height: 100vh;
+  height: 100%;
   z-index: 1;
   background: $color-menu;
-
-  transition: all 500ms linear;
+  transition: all .5s ease-in-out;
 }
 
-#sidebar-move.active {
-  left: -130px;
+#sidebar.active {
+  width: 70px;
 
-  .menu__item--title {
+  .logo, .manager__title,
+  .manager__name {
     display: none;
+  }
+
+  .hamburger {
+    margin: 1.7em 0 1em 1.7em;
+  }
+
+  .menu {
+    &__item{
+      width: 70px;
+
+      &--title {
+        display: block;
+        width: 0;
+        overflow: hidden;
+      }
+    }
   }
 }

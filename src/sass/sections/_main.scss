@@ -1,6 +1,12 @@
 .main {
   background: $color-grey-4;
-  margin-left: 200px;
-  padding-top: 1px;
+  padding-top: 50px;
   width: calc(100% - 200px);
+  margin-left: 200px;
+  transition: all .5s ease-in-out;
+
+  &.active {
+    width: calc(100% - 70px);
+    margin-left: 70px;
+  }
 }

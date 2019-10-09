@@ -4499,7 +4499,7 @@ body {
 }
 
 .table-cell {
-  padding: 0.75rem;
+  padding: 0.95rem;
   border-top: 1px solid #e3e3e3;
   position: relative;
   -ms-flex: 0 0 33%;
@@ -4640,10 +4640,23 @@ body {
   list-style: none;
 }
 
+.menu__link {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
 .menu__item {
+  width: 200px;
   padding: .7em;
   font-size: 16px;
   border-left: 4px solid #191919;
+  transition: all .5s ease-in-out;
+  overflow: hidden;
 }
 
 .menu__item--icon {
@@ -4694,6 +4707,11 @@ body {
   -ms-flex-direction: row-reverse;
       flex-direction: row-reverse;
   margin-top: -1px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .topbar__item {
@@ -4748,29 +4766,50 @@ body {
 
 .main {
   background: #f5f5f2;
-  margin-left: 200px;
-  padding-top: 1px;
+  padding-top: 50px;
   width: calc(100% - 200px);
+  margin-left: 200px;
+  transition: all .5s ease-in-out;
+}
+
+.main.active {
+  width: calc(100% - 70px);
+  margin-left: 70px;
 }
 
 .sidebar,
-#sidebar-move {
+#sidebar {
   position: fixed;
   top: 0;
   left: 0;
   width: 200px;
-  height: 100vh;
+  height: 100%;
   z-index: 1;
   background: #191919;
-  transition: all 500ms linear;
+  transition: all .5s ease-in-out;
 }
 
-#sidebar-move.active {
-  left: -130px;
+#sidebar.active {
+  width: 70px;
 }
 
-#sidebar-move.active .menu__item--title {
+#sidebar.active .logo, #sidebar.active .manager__title,
+#sidebar.active .manager__name {
   display: none;
+}
+
+#sidebar.active .hamburger {
+  margin: 1.7em 0 1em 1.7em;
+}
+
+#sidebar.active .menu__item {
+  width: 70px;
+}
+
+#sidebar.active .menu__item--title {
+  display: block;
+  width: 0;
+  overflow: hidden;
 }
 
 .stats {
@@ -4778,8 +4817,7 @@ body {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  padding: 5px;
-  width: 70%;
+  margin: 0 auto;
 }
 
 .stats__column {
@@ -4787,7 +4825,7 @@ body {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  padding: 5px;
+  padding: 10px;
   border-bottom: 1px solid #e3e3e3;
 }
 
@@ -4801,8 +4839,17 @@ body {
   color: #333333;
 }
 
-.graph {
-  padding: 2em 0 1em 0;
+.earnings {
+  padding: 4em 0;
+}
+
+.earnings-chart img {
+  width: 100%;
+}
+
+.links-button {
+  text-align: center;
+  padding: 1em 0 1.5em 0;
 }
 
 /*.links {
