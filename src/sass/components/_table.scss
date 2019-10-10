@@ -7,6 +7,10 @@
     display: flex;
     flex-wrap: wrap;
 
+    &:last-child {
+      border-bottom: $border;
+    }
+
     &:hover {
       background-color: $color-grey-4;
 
@@ -55,3 +59,4 @@
     color: $color-blue;
   }
 }
+

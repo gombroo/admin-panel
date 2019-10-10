@@ -1,9 +1,10 @@
 .btn {
   font-weight: $font-light;
+  // font-size: $font-size-normal;
   text-align: center;
   vertical-align: middle;
   border: none;
-  padding: 12px 16px;
+  padding: 12px 20px;
   border-radius: 3px;
   cursor: pointer;
   transition: $transition;
@@ -45,6 +46,10 @@
     &--blue {
       color: $color-grey-1;
       background-color: $color-grey-3;
+      margin: 5px;
+      width: 190px;
+      height: 40px;
+      padding: 5px;
 
       i {
         color: $color-blue;
@@ -60,6 +65,11 @@
     &--orange {
       color: $color-grey-1;
       background-color: $color-grey-3;
+      margin: 0 5px;
+      margin: 0 5px;
+      width: 190px;
+      height: 40px;
+      padding: 5px;
 
       i {
         color: $color-orange-1;
@@ -75,6 +85,11 @@
     &--green {
       color: $color-grey-1;
       background-color: $color-grey-3;
+      margin: 0 5px;
+      width: 190px;
+      height: 40px;
+      padding: 5px;
+
 
       i {
         color: $color-green-2;

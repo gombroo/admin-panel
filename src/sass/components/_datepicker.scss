@@ -1,7 +1,7 @@
 .date {
-  display: flex;
+  /*display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;*/
   margin: 20px auto;
   padding-bottom: 20px;
   border-bottom: $border;
@@ -16,7 +16,8 @@
 
 
     &--start {
-      width: 200px;
+      //width: 200px;
+      flex: 0 0 33%;
       padding: 10px 20px 10px 12px;
 
       input {
@@ -27,7 +28,8 @@
 
     &--end {
       padding: 10px 0 10px 10px;
-      width: 160px;
+      //width: 160px;
+      flex: 0 0 33%;
       border-left: $border;
 
       input {
@@ -40,5 +42,12 @@
       padding-right: 10px !important;
       color: $color-dark;
     }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .date__input {
+    flex-direction: column;
   }
 }

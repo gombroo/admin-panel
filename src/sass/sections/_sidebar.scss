@@ -13,8 +13,10 @@
 #sidebar.active {
   width: 70px;
 
-  .logo, .manager__title,
-  .manager__name {
+  .logo,
+  .manager__title,
+  .manager__name,
+  .manager__photo {
     display: none;
   }
 
@@ -23,7 +25,7 @@
   }
 
   .menu {
-    &__item{
+    &__item {
       width: 70px;
 
       &--title {
