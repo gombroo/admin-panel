@@ -26,7 +26,7 @@ var chart = new Chart(ctx, {
       backgroundColor: '#8DBEC8',
       borderColor: '#8DBEC8',
       // 6
-      data: [ 350, 200, 220, 350, 420, 400, 300, 280, 300, 280 ],
+      data: [ 150, 180, 200, 220, 320, 400, 300, 280, 300, 280 ],
     },
     {
       label: 'FTD',

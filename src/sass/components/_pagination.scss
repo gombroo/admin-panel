@@ -1,0 +1,27 @@
+.pagination {
+  display: inline-block;
+
+  a {
+    color: $color-blue;
+    float: left;
+    font-size: $font-size-normal;
+    font-weight: $font-regular;
+    padding: 12px 16px;
+    text-decoration: none;
+
+    i {
+      color: $color-grey-1;
+    }
+  }
+
+  a.active {
+    background-color: $color-grey-4;
+    color: $color-grey-1;
+    border-radius: 4px;
+  }
+
+  a:hover:not(.active) {
+    background-color: $color-grey-4;
+    border-radius: 4px;
+  }
+}
