@@ -1,0 +1,129 @@
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+  border: $border;
+  border-radius: 4px;
+  outline-color: $color-grey-1;
+  outline-width: 1px;
+  padding: 12px 15px;
+  width: 95%;
+
+  &:hover {
+    transition: all .4s;
+    border: $border;
+  }
+
+  &:focus {
+    background-color: $color-grey-4;
+    border-radius: 4px;
+    outline-color: $color-grey-3;
+  }
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url(https://image.flaticon.com/icons/png/128/118/118738.png);
+  background-size: 15px auto;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  color: $color-dark;
+}
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-top: 5px;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: $font-regular;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: $color-white;
+  border: $border;
+}
+
+.checkbox-container:hover input~.checkbox-custom {
+  background-color: $color-grey-4;
+}
+
+.checkbox-container input:checked~.checkbox-custom {
+  background-color: $color-green-1;
+}
+
+.checkbox-custom:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked~.checkbox-custom:after {
+  display: block;
+}
+
+.checkbox-container .checkbox-custom:after {
+  left: 9px;
+  top: 3px;
+  width: 6px;
+  height: 14px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.form {
+  &__section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__label {
+    flex: 2;
+    margin: 10px;
+    padding: 13px;
+    font-weight: $font-bold;
+    color: $color-grey-1;
+  }
+
+  &__input {
+    flex: 10;
+  }
+}
+
+@media (max-width: 720px) {
+  .form {
+    &__section {
+      flex-direction: column;
+    }
+
+    &__label {
+      margin: 0 10px;
+      padding: 13px 13px 0 10px;
+    }
+  }
+}

@@ -1,5 +1,7 @@
 /* eslint-disable no-unused-vars */
-/* Toggle Menu */
+/* eslint-disable no-undef */
+
+/* TOGGLE MENU */
 
 const hamburger = document.querySelector('#hamburger');
 
@@ -8,10 +10,21 @@ hamburger.addEventListener('click', function () {
   document.getElementById('main').classList.toggle('active');
 });
 
-/* Chart */
+
+/* MODALS */
+
+// close modal by removing "show" class
+// attach closeModal function to 'js-close-modal' class
+// close modal by clicking on the background overlay
+// close modal by clicking ESC
+// open modal
+// openModal('#myModal')
+
+
+/* CHART GENERATOR */
+
 var ctx = document.getElementById('myChart').getContext('2d');
 
-// eslint-disable-next-line no-undef
 var chart = new Chart(ctx, {
   // 1
   type: 'bar',

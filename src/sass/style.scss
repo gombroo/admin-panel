@@ -9,8 +9,9 @@
 /* Components */
 @import "components/buttons";
 @import "components/headers";
-@import "components/table";
-@import "components/box";
+@import "components/inputs";
+@import "components/tables";
+@import "components/modals";
 @import "components/datepicker";
 @import "components/branding";
 @import "components/menu";
@@ -22,9 +23,7 @@
 @import "sections/main";
 @import "sections/sidebar";
 @import "sections/statistics";
-@import "sections/links";
-@import "sections/form";
-@import "sections/details";
 
 /* Pages / Views */
 @import "pages/dashboard";
+
