@@ -420,11 +420,16 @@ ul li {
   box-shadow: 0 0 10px #e3e3e3;
 }
 
-.scroll_wrapper {
+.scroll-wrapper {
   display: block;
   width: 100%;
   overflow-x: auto;
   white-space: nowrap;
+}
+
+.scroll-wrapper table {
+  width: 100%;
+  max-width: 100%;
 }
 
 .line {
@@ -1131,10 +1136,16 @@ select {
   .form__section {
     -ms-flex-direction: column;
         flex-direction: column;
+    -ms-flex-align: left;
+        align-items: left;
+  }
+  .form__input {
+    width: 100%;
   }
   .form__label {
-    margin: 0 10px;
+    margin: 10px 0;
     padding: 13px 13px 0 10px;
+    width: 100%;
   }
 }
 
@@ -1642,6 +1653,12 @@ select {
   color: #979797;
 }
 
+@media (max-width: 720px) {
+  .topbar__item--user {
+    display: none;
+  }
+}
+
 .main {
   background: #f5f5f2;
   padding-top: 50px;
@@ -1656,6 +1673,13 @@ select {
   margin-left: 70px;
 }
 
+/*
+@media (max-width: 720px) {
+  .main {
+    width: 100%;
+  }
+}
+*/
 .sidebar,
 #sidebar {
   position: fixed;

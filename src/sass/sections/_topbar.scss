@@ -62,3 +62,9 @@
     }
   }
 }
+
+@media (max-width: 720px) {
+  .topbar__item--user {
+    display: none;
+  }
+}
