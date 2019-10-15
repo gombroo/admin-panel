@@ -33,7 +33,7 @@
               <span class="topbar__item--dot"></span>
             </a>
           </li>
-          <li class="topbar__item">
+          <li class="topbar__item" id="modal-login-button">
             <a href="#">
               <span class="topbar__item--icon icon-profile"></span>
               <span class="topbar__item--user">Leonardo Di Caprio</span>
@@ -124,28 +124,28 @@
   <!-- MAIN -->
   <div class="main" id="main">
 
-    <!-- SECTION STATISTICS  -->
-    <section class="statistics section-box">
+    <!-- SECTION GENERAL STATISTICS  -->
+    <section class="statistics box">
       <div class="row">
         <div class="col-12">
-          <h1 class="section__header--line">General STATISTICS</h1>
+          <h1 class="section__title">General Statistics</h1>
         </div>
       </div>
 
-      <div class="row date">
-        <div class="col-12 center-content">
-          <div class="date__input">
-            <div class="date__input--start"><input type="text" value="21.01.2019"></div>
-            <div class="date__input--end"><input type="text" value="21.01.2019"></div>
-            <div class=" date__input--icon"><span class="icon-calendar"></span></div>
+      <div class="datepicker">
+        <div class="date">
+          <div class="date__box">
+            <div class="date__box--start">21.01.2019</div>
+            <div class="date__box--end">21.01.2019</div>
+            <div class=" date__box--icon"><span class="icon-calendar"></span></div>
           </div>
-          <button class="btn btn__one icon-refresh"></button>
+          <button class="btn__refresh icon-refresh"></button>
         </div>
       </div>
 
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+          <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 padding-content">
             <div class="row stats">
               <div class="col-md-5 stats__column">
                 <span class="stats__column--title">Visit Signups</span>
@@ -176,34 +176,35 @@
         <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
           <canvas id="myChart"></canvas>
         </div>
-        <div class="col-sm-2 col-sm-offset-3 col-md-10 col-md-offset-2 col-lg-8 col-lg-offset-3">
-          <button class="btn btn__dot--blue"><i class="fa fa-circle"></i>Signups</button>
-          <button class="btn btn__dot--orange"><i class="fa fa-circle"></i>FTD</button>
-          <button class="btn btn__dot--green"><i class="fa fa-circle"></i>Earned</button>
+        <div class="col-sm-12 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-4">
+          <button class="btn__dot--blue"><i class="fa fa-circle"></i>Signups</button>
+          <button class="btn__dot--orange"><i class="fa fa-circle"></i>FTD</button>
+          <button class="btn__dot--green"><i class="fa fa-circle"></i>Earned</button>
         </div>
       </div>
     </section>
 
-    <!-- SECTION DETAILS -->
-    <section class="details section-box">
+    <!-- SECTION DETAIL STATISTICS -->
+    <section class="details box">
       <div class="row">
         <div class="col-12">
-          <h1 class="section__header--line">Detail Statistics</h1>
+          <h1 class="section__title">Detail Statistics</h1>
         </div>
       </div>
 
-      <div class="row date">
-        <div class="col-12 center-content">
-          <div class="date__input">
-            <div class="date__input--start"><input type="text" value="21.01.2019"></div>
-            <div class="date__input--end"><input type="text" value="21.01.2019"></div>
-            <div class=" date__input--icon"><span class="icon-calendar"></span></div>
+      <div class="datepicker">
+        <div class="date">
+          <div class="date__box">
+            <div class="date__box--start">21.01.2019</div>
+            <div class="date__box--end">21.01.2019</div>
+            <div class=" date__box--icon"><span class="icon-calendar"></span></div>
           </div>
-          <button class="btn btn__one icon-refresh"></button>
+          <button class="btn__refresh icon-refresh"></button>
         </div>
       </div>
 
       <div class="container">
+
         <div class="row">
 
           <table class="details__table container">
@@ -225,7 +226,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr class="details__table--row">
+              <tr class="table__row">
                 <td>aff/sam_test</td>
                 <td>17/08/02 (12:58)</td>
                 <td>232</td>
@@ -333,6 +334,7 @@
           </table>
 
         </div>
+
       </div>
 
       <div class="container">
@@ -354,365 +356,360 @@
     </section>
 
     <!-- SECTION BANNERS -->
-    <section class="banners section-box">
+    <section class="banners box">
       <div class="row">
         <div class="col-12">
-          <h1 class="section__header--line">Banners</h1>
+          <h1 class="section__title">Banners</h1>
         </div>
       </div>
+
       <div class="container">
+
         <div class="row">
-          <div class="col-sm-12 center-content padding-content">
-            <button class="btn btn__one">+ add new</button>
+          <div class="col-12 center-content padding-content">
+            <button class="btn__orange">+ add new</button>
           </div>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-              <table class="table">
-                <tbody>
-                  <tr class="table-row">
-                    <td class="table-cell title">Banner main</td>
-                    <td class="table-cell address"> http://www.website.com/bannermain.gif</td>
-                    <td class="table-cell">
-                      <div class="overlay">
-                        <a href="#"><span class="icon-links"></span></a>
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-row">
-                    <td class="table-cell title">Signup banner</td>
-                    <td class="table-cell address">http://www.website.com/signup.gif</td>
-                    <td class="table-cell">
-                      <div class="overlay">
-                        <a href="#"><span class="icon-links"></span></a>
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-row">
-                    <td class="table-cell title">Banner left side</td>
-                    <td class="table-cell address"> http://www.website.com/leftside.gif</td>
-                    <td class="table-cell">
-                      <div class="overlay">
-                        <a href="#"><span class="icon-links"></span></a>
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-row">
-                    <td class="table-cell title">Vertical banner</td>
-                    <td class="table-cell address"> http://www.website.com/vert.gif</td>
-                    <td class="table-cell">
-                      <div class="overlay">
-                        <a href="#"><span class="icon-links"></span></a>
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-row">
-                    <td class="table-cell title">Front banner</td>
-                    <td class="table-cell address">http://www.website.com/front.gif</td>
-                    <td class="table-cell">
-                      <div class="overlay">
-                        <a href="#"><span class="icon-links"></span></a>
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-row">
-                    <td class="table-cell title">Horizontal banner</td>
-                    <td class="table-cell address"> http://www.website.com/horizontal.gif</td>
-                    <td class="table-cell">
-                      <div class="overlay">
-                        <a href="#"><span class="icon-links"></span></a>
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-row">
-                    <td class="table-cell title">Facebook</td>
-                    <td class="table-cell address"> http://www.facebook.com</td>
-                    <td class="table-cell">
-                      <div class="overlay">
-                        <a href="#"><span class="icon-links"></span></a>
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-row">
-                    <td class="table-cell title">Dashboard</td>
-                    <td class="table-cell address"> http://www.dashboard.com</td>
-                    <td class="table-cell">
-                      <div class="overlay">
-                        <a href="#"><span class="icon-links"></span></a>
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-row">
-                    <td class="table-cell title">Blurax</td>
-                    <td class="table-cell address"> http://www.blurax.com</td>
-                    <td class="table-cell">
-                      <div class="overlay">
-                        <a href="#"><span class="icon-links"></span></a>
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-row">
-                    <td class="table-cell title">Piece of Wine </td>
-                    <td class="table-cell address"> http://www.pieceofwine.com</td>
-                    <td class="table-cell">
-                      <div class="overlay">
-                        <a href="#"><span class="icon-links"></span></a>
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="col-sm-12 center-content padding-content">
-            <button class="btn btn__one">+ add new</button>
+
+        <div class="row">
+          <div class="col-lg-8  col-lg-offset-2">
+            <table class="table">
+              <tbody>
+                <tr class="table__row">
+                  <td class="table__cell title">Banner main</td>
+                  <td class="table__cell address">http://www.website.com/bannermain.gif</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell title">Signup banner</td>
+                  <td class="table__cell address">http://www.website.com/signup.gif</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell title">Banner left side</td>
+                  <td class="table__cell address"> http://www.website.com/leftside.gif</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell title">Vertical banner</td>
+                  <td class="table__cell address"> http://www.website.com/vert.gif</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell title">Front banner</td>
+                  <td class="table__cell address">http://www.website.com/front.gif</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell title">Horizontal banner</td>
+                  <td class="table__cell address"> http://www.website.com/horizontal.gif</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell title">Facebook</td>
+                  <td class="table__cell address"> http://www.facebook.com</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell title">Dashboard</td>
+                  <td class="table__cell address"> http://www.dashboard.com</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell title">Blurax</td>
+                  <td class="table__cell address"> http://www.blurax.com</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell title">Piece of Wine </td>
+                  <td class="table__cell address"> http://www.pieceofwine.com</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
+
+        <div class="col-sm-12 center-content padding-content">
+          <button class="btn__orange">+ add new</button>
+        </div>
+
       </div>
     </section>
 
     <!-- SECTION LINKS -->
-    <section class="links section-box">
+    <section class="links box">
       <div class="row">
         <div class="col-12">
-          <h1 class="section__header--line">Links</h1>
+          <h1 class="section__title">Links</h1>
         </div>
       </div>
+
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 center-content padding-content">
-            <button class="btn btn__one">+ add new</button>
+          <div class="col-12 center-content padding-content">
+            <button class="btn__orange">+ add new</button>
           </div>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-              <table class="table">
-                <tbody>
-                  <tr class="table-row">
-                    <td class="table-cell title">Homepage</td>
-                    <td class="table-cell address">http://homepage.com</td>
-                    <td class="table-cell">
-                      <div class="overlay">
-                        <!--<div class="empty-cell"></div>-->
-                        <a href="#"><span class="icon-links"></span></a>
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-row">
-                    <td class="table-cell title">Currently offer</td>
-                    <td class="table-cell address"> http://www.currently.com</td>
-                    <td class="table-cell">
-                      <div class="overlay">
-                        <!--<div class="empty-cell"></div>-->
-                        <a href="#"><span class="icon-links"></span></a>
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-row">
-                    <td class="table-cell title">Blurpix</td>
-                    <td class="table-cell address">http://www.blurpix.com</td>
-                    <td class="table-cell">
-                      <div class="overlay">
-                        <!--<div class="empty-cell"></div>-->
-                        <a href="#"><span class="icon-links"></span></a>
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-row">
-                    <td class="table-cell title">Your Site</td>
-                    <td class="table-cell address">http://www.yoursite.com</td>
-                    <td class="table-cell">
-                      <div class="overlay">
-                        <!--<div class="empty-cell"></div>-->
-                        <a href="#"><span class="icon-links"></span></a>
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-row">
-                    <td class="table-cell title">Your Site</td>
-                    <td class="table-cell address">http://www.yoursite.com</td>
-                    <td class="table-cell">
-                      <div class="overlay">
-                        <!--<div class="empty-cell"></div>-->
-                        <a href="#"><span class="icon-links"></span></a>
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-row">
-                    <td class="table-cell title">Google</td>
-                    <td class="table-cell address"> http://www.google.com</td>
-                    <td class="table-cell">
-                      <div class="overlay">
-                        <!--<div class="empty-cell"></div>-->
-                        <a href="#"><span class="icon-links"></span></a>
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-row">
-                    <td class="table-cell title">Facebook</td>
-                    <td class="table-cell address"> http://www.facebook.com</td>
-                    <td class="table-cell">
-                      <div class="overlay">
-                        <!--<div class="empty-cell"></div>-->
-                        <a href="#"><span class="icon-links"></span></a>
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-row">
-                    <td class="table-cell title">Dashboard</td>
-                    <td class="table-cell address"> http://www.dashboard.com</td>
-                    <td class="table-cell">
-                      <div class="overlay">
-                        <!--<div class="empty-cell"></div>-->
-                        <a href="#"><span class="icon-links"></span></a>
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-row">
-                    <td class="table-cell title">Blurax</td>
-                    <td class="table-cell address"> http://www.blurax.com</td>
-                    <td class="table-cell">
-                      <div class="overlay">
-                        <!--<div class="empty-cell"></div>-->
-                        <a href="#"><span class="icon-links"></span></a>
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-row">
-                    <td class="table-cell title">Piece of Wine </td>
-                    <td class="table-cell address"> http://www.pieceofwine.com</td>
-                    <td class="table-cell">
-                      <div class="overlay">
-                        <!--<div class="empty-cell"></div>-->
-                        <a href="#"><span class="icon-links"></span></a>
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="col-sm-12 center-content padding-content">
-            <button class="btn btn__one">+ add new</button>
+
+        <div class="row">
+          <div class="col-lg-8  col-lg-offset-2">
+            <table class="table">
+              <tbody>
+                <tr class="table__row">
+                  <td class="table__cell title">Homepage</td>
+                  <td class="table__cell address">http://homepage.com</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell title">Currently offer</td>
+                  <td class="table__cell address"> http://www.currently.com</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell title">Blurpix</td>
+                  <td class="table__cell address">http://www.blurpix.com</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell title">Your Site</td>
+                  <td class="table__cell address">http://www.yoursite.com</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell title">Your Site</td>
+                  <td class="table__cell address">http://www.yoursite.com</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell title">Google</td>
+                  <td class="table__cell address"> http://www.google.com</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell title">Facebook</td>
+                  <td class="table__cell address"> http://www.facebook.com</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell title">Dashboard</td>
+                  <td class="table__cell address"> http://www.dashboard.com</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell title">Blurax</td>
+                  <td class="table__cell address"> http://www.blurax.com</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell title">Piece of Wine </td>
+                  <td class="table__cell address"> http://www.pieceofwine.com</td>
+                  <td class="table__cell icons">
+                    <div class="overlay">
+                      <a href="#"><span class="icon-links"></span></a>
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
+
+        <div class="col-sm-12 center-content padding-content">
+          <button class="btn__orange">+ add new</button>
+        </div>
+
       </div>
     </section>
 
     <!-- SECTION PERSONAL DATA  -->
-    <section class="form section-box">
+    <section class="form box">
       <div class="row">
         <div class="col-12">
-          <h1 class="section__header--line">Personal Data</h1>
+          <h1 class="section__title">Personal Data</h1>
         </div>
       </div>
       <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
         <form action="" method="POST">
           <div class="container">
             <div class="form__section">
-              <div class="form__section--label">
+              <div class="form__label">
                 <label for="fname">First Name</label>
               </div>
-              <div class="form__section--input">
+              <div class="form__input">
                 <input type="text" id="fname" name="name" placeholder="Leonardo" required>
               </div>
             </div>
             <div class="form__section">
-              <div class="form__section--label">
+              <div class="form__label">
                 <label for=";name">Last Name</label>
               </div>
-              <div class="form__section--input">
+              <div class="form__input">
                 <input type="text" id="lname" name="lname" placeholder="Dicaprio" required>
               </div>
             </div>
             <div class="form__section">
-              <div class="form__section--label">
+              <div class="form__label">
                 <label for="email">Email</label>
               </div>
-              <div class="form__section--input">
+              <div class="form__input">
                 <input type="email" id="email" name="email" placeholder="leonardo@dicaprio.com" required>
               </div>
             </div>
             <div class="form__section">
-              <div class="form__section--label">
+              <div class="form__label">
                 <label for="phone">Phone</label>
               </div>
-              <div class="form__section--input">
+              <div class="form__input">
                 <input type="text" id="phone" name="phone" placeholder="+48 765000222" required>
               </div>
             </div>
           </div>
-          <div class="form__line"></div>
+          <div class="line"></div>
           <div class="container">
             <div class="form__section">
-              <div class="form__section--label">
+              <div class="form__label">
                 <label for="skype">Skype</label>
               </div>
-              <div class="form__section--input">
+              <div class="form__input">
                 <input type="text" id="skype" name="skype" placeholder="leooodi">
               </div>
             </div>
             <div class="form__section">
-              <div class="form__section--label">
+              <div class="form__label">
                 <label for="hangouts">Hangouts</label>
               </div>
-              <div class="form__section--input">
+              <div class="form__input">
                 <input type="text" id="hangouts" name="hangouts" placeholder="leooodi">
               </div>
             </div>
             <div class="form__section">
-              <div class="form__section--label">
+              <div class="form__label">
                 <label for="gg">GG</label>
               </div>
-              <div class="form__section--input">
+              <div class="form__input">
                 <input type="text" id="gg" name="gg" placeholder="8784560">
               </div>
             </div>
           </div>
-          <div class="form__line"></div>
+          <div class="line"></div>
           <div class="container">
             <div class="form__section">
-              <div class="form__section--label">
+              <div class="form__label">
                 <label>Password</label>
               </div>
-              <div class="form__section--input">
+              <div class="form__input">
                 <input type="password" required>
               </div>
             </div>
             <div class="form__section">
-              <div class="form__section--label">
+              <div class="form__label">
                 <label>Repeat</label>
               </div>
-              <div class="form__section--input">
+              <div class="form__input">
                 <input type="password" required>
               </div>
             </div>
           </div>
-          <div class="form__line"></div>
+          <div class="line"></div>
           <div class="container center-content">
-            <input type="submit" value="Save" class="btn btn__one">
+            <input type="submit" value="Save" class="btn__orange">
           </div>
         </form>
       </div>
@@ -720,6 +717,311 @@
 
     <!-- END MAIN -->
   </div>
+
+
+  <!-- MODALS -->
+
+  <!-- MODAL LOGIN -->
+  <div class="ovrl" id="ovrl">
+    <div class="modal" id="modal-login">
+      <h1 class="section__title">Login</h1>
+      <div class="form__section md-padding">
+        <div class="form__input">
+          <input type="text" id="login-name" name="login-name" placeholder="login">
+        </div>
+        <div class="form__input">
+          <input type="password" id="login-password" name="login-password" placeholder="password">
+        </div>
+        <button class="btn__orange js--close-modal" type="button">Enter</button>
+      </div>
+    </div>
+  </div> <!-- end modal login -->
+
+  <!-- MODAL QUIT -->
+  <div class="ovrl" id="ovrl">
+    <div class="modal" id="modal-quit">
+      <h1 class="section__title">Do you really want to quit?</h1>
+      <div class="form__section md-padding">
+        <button class="btn__grey js--close-modal">Cancel</button>
+        <button class="btn__orange js--close-modal">Quit</button>
+      </div>
+    </div>
+  </div> <!-- end modal quit -->
+
+  <!-- MODAL BANNERS -->
+  <div class="ovrl" id="ovrl">
+    <div class="modal-big" id="modal-banners">
+      <h1 class="section__title">Banners</h1>
+
+      <div class="modal-row">
+
+        <div class="col-md-5">
+          <form>
+            <div class="form__label">
+              <label for="scheme">Scheme Name</label>
+            </div>
+            <div class="form__input">
+              <input type="text" id="scheme" name="scheme" placeholder="Name" required>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-5">
+          <form>
+            <div class="form__label">
+              <label for="compain">Compain</label>
+            </div>
+            <div class="form__input">
+              <select id="compain" name="compain">
+                <option value="opt">Select compain</option>
+                <option value="opt">Select compain</option>
+                <option value="opt">Select compain</option>
+                <option value="opt">Select compain</option>
+                <option value="opt">Select compain</option>
+              </select>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-2">
+          <form>
+            <div class="form__label">
+              <label for="language">Language</label>
+            </div>
+            <div class="form__input">
+              <select id="language" name="language">
+                <option value="opt">English</option>
+                <option value="opt">Russian</option>
+                <option value="opt">Chinese</option>
+                <option value="opt">Turkish</option>
+                <option value="opt">Hindi</option>
+              </select>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="modal-row">
+
+        <div class="col-md-4">
+          <form>
+            <div class="form__label">
+              <label for="selected">Select</label>
+            </div>
+            <div class="form__input">
+              <select id="selected" name="selected">
+                <option value="opt">Select</option>
+                <option value="opt">Select</option>
+                <option value="opt">Select</option>
+                <option value="opt">Select</option>
+                <option value="opt">Select</option>
+              </select>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-4">
+          <form>
+            <div class="form__label">
+              <label for="design">Design</label>
+            </div>
+            <div class="form__input">
+              <select id="design" name="design">
+                <option value="opt">Select</option>
+                <option value="opt">Select</option>
+                <option value="opt">Select</option>
+                <option value="opt">Select</option>
+                <option value="opt">Select</option>
+              </select>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-4">
+          <form>
+            <div class="form__label">
+              <label for="file-type">File type</label>
+            </div>
+            <div class="form__input">
+              <select id="file-type" name="file-type">
+                <option value="opt">Select</option>
+                <option value="opt">Select</option>
+                <option value="opt">Select</option>
+                <option value="opt">Select</option>
+                <option value="opt">Select</option>
+              </select>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="line"></div>
+
+      <div class="modal-row">
+
+        <div class="col-md-6">
+
+          <h3 class="section__subtitle">Select banners</h3>
+
+          <div class="modal-scroll">
+            <form>
+              <label class="checkbox-container">Banner main
+                <input type="checkbox" checked="checked">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Signup banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Left banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Right banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Bottom banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Long banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Short banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Left banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Right banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Bottom banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Long banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Short banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+            </form>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+          <h3 class="section__subtitle">Select websites</h3>
+
+          <div class="modal-scroll">
+            <form>
+              <label class="checkbox-container">Banner site
+                <input type="checkbox" checked="checked">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Signup site
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Left site
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Right site
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Bottom banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Long banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Short banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Left banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Right banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Bottom banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Long banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+
+              <label class="checkbox-container">Short banner
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="line"></div>
+
+      <div class="modal-row">
+
+        <div class="col-12 modal-full">
+
+          <input type="text" id="glink" name="glink" placeholder="Generated link" required>
+          <button class="btn__grey">Copy link</button>
+          <button class="btn__orange">Save</button>
+        </div>
+
+      </div>
+
+    </div> <!-- end modal banners -->
+
+  </div> <!-- end modal banners -->
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
   <script src="js/script.js"></script>
