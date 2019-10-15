@@ -11,14 +11,60 @@ hamburger.addEventListener('click', function () {
 });
 
 
+/* MOBILE MENU */
+
+function toggleMenu(visible) {
+  document.querySelector('.menu').classList.toggle('show', visible);
+}
+
+document.querySelector('#hamburger').addEventListener('click', function(e) {
+  e.preventDefault();
+  toggleMenu();
+});
+
+
 /* MODALS */
 
 // close modal by removing "show" class
+function closeModal() {
+  document.getElementById('overlay').classList.remove('show');
+}
+
 // attach closeModal function to 'js-close-modal' class
+document.querySelectorAll('#ovrl .js--close-modal').forEach(function(btn) {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    closeModal();
+  });
+});
+
 // close modal by clicking on the background overlay
+document.querySelector('#ovrl').addEventListener('click', function(e) {
+  if(e.target === this) {
+    closeModal();
+  }
+});
+
 // close modal by clicking ESC
+document.addEventListener('keyup', function(e) {
+  if(e.keyCode === 27) {
+    closeModal();
+  }
+});
+
 // open modal
+function openModal(modal) {
+  document.querySelectorAll('#ovrl > *').forEach(function(modal) {
+    modal.classList.remove('show');
+  });
+  document.querySelector('#ovrl').classList.add('show');
+  document.querySelector(modal).classList.add('show');
+}
+
 // openModal('#myModal')
+openModal('#modal-login');
+openModal('#modal-quit');
+openModal('#modal-banners');
 
 
 /* CHART GENERATOR */
