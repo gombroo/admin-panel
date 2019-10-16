@@ -1277,7 +1277,7 @@ select {
   display: none;
 }
 
-.ovrl .show {
+.ovrl.show {
   display: -ms-flexbox;
   display: flex;
 }
@@ -1287,7 +1287,8 @@ select {
 }
 
 .modal {
-  max-width: 600px;
+  width: 450px;
+  max-width: 70%;
   margin: auto;
   background-color: #ffffff;
   position: relative;
@@ -1295,7 +1296,7 @@ select {
   border-radius: 5px;
 }
 
-.modal .show {
+.modal.show {
   display: block;
 }
 
@@ -1310,11 +1311,9 @@ select {
   padding: 20px;
 }
 
-.modal-big {
+#modal-banners {
   width: calc(100% - 30%);
   margin: auto;
-  background-color: #ffffff;
-  border-radius: 5px;
 }
 
 #modal-quit button {
@@ -1690,6 +1689,12 @@ select {
   z-index: 1;
   background: #191919;
   transition: all .5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .sidebar, #sidebar {
+    width: 100%;
+  }
 }
 
 #sidebar.active {

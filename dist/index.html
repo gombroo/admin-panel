@@ -33,15 +33,18 @@
               <span class="topbar__item--dot"></span>
             </a>
           </li>
-          <li class="topbar__item" id="modal-login-button">
-            <a href="#">
+          <li class="topbar__item">
+            <a href="#" class="modal-open" data-modal="#modal-login">
               <span class="topbar__item--icon icon-profile"></span>
               <span class="topbar__item--user">Leonardo Di Caprio</span>
             </a>
           </li>
           <li class="topbar__item">
             <a href="#">
-              <span class="topbar__item--icon icon-quit" id="modal-quit-button"></span>
+              <span
+                class="topbar__item--icon icon-quit modal-open"
+                data-modal="#modal-quit">
+              </span>
             </a>
           </li>
         </ul>
@@ -367,7 +370,9 @@
 
         <div class="row">
           <div class="col-12 center-content padding-content">
-            <button class="btn__orange" id="modal-banners-button">+ add new</button>
+            <button class="btn__orange modal-open"
+              data-modal="#modal-banners">
+              + add new</button>
           </div>
         </div>
 
@@ -485,7 +490,8 @@
         </div>
 
         <div class="col-sm-12 center-content padding-content">
-          <button class="btn__orange" id="modal-banners-button">+ add new</button>
+          <button class="btn__orange modal-open" data-modal="#modal-banners" id="modal-banners-button">+ add
+            new</button>
         </div>
 
       </div>
@@ -729,8 +735,9 @@
 
   <!-- MODALS -->
 
-  <!-- MODAL LOGIN -->
   <div class="ovrl" id="ovrl">
+
+    <!-- MODAL LOGIN -->
     <div class="modal" id="modal-login">
       <h1 class="section__title">Login</h1>
       <div class="form__section md-padding">
@@ -742,23 +749,19 @@
         </div>
         <button class="btn__orange js--close-modal" type="button">Enter</button>
       </div>
-    </div>
-  </div> <!-- end modal login -->
+    </div> <!-- end modal login -->
 
-  <!-- MODAL QUIT -->
-  <div class="ovrl" id="ovrl">
+    <!-- MODAL QUIT -->
     <div class="modal" id="modal-quit">
       <h1 class="section__title">Do you really want to quit?</h1>
       <div class="form__section md-padding">
         <button class="btn__grey js--close-modal">Cancel</button>
         <button class="btn__orange js--close-modal">Quit</button>
       </div>
-    </div>
-  </div> <!-- end modal quit -->
+    </div><!-- end modal quit -->
 
-  <!-- MODAL BANNERS -->
-  <div class="ovrl" id="ovrl">
-    <div class="modal-big" id="modal-banners">
+    <!-- MODAL BANNERS -->
+    <div class="modal" id="modal-banners">
       <h1 class="section__title">Banners</h1>
 
       <div class="modal-row">
@@ -1029,7 +1032,6 @@
     </div> <!-- end modal banners -->
 
   </div> <!-- end modal banners -->
-
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
   <script src="js/script.js"></script>
