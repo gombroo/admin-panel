@@ -27,7 +27,7 @@ document.querySelector('#hamburger').addEventListener('click', function(e) {
 
 // close modal by removing "show" class
 function closeModal() {
-  document.getElementById('overlay').classList.remove('show');
+  document.getElementById('ovrl').classList.remove('show');
 }
 
 // attach closeModal function to 'js-close-modal' class
@@ -61,10 +61,16 @@ function openModal(modal) {
   document.querySelector(modal).classList.add('show');
 }
 
-// openModal('#myModal')
-openModal('#modal-login');
-openModal('#modal-quit');
-openModal('#modal-banners');
+const modalButtons = document.querySelectorAll('.modal-open');
+
+for (let item of modalButtons) {
+
+  item.addEventListener('click', function() {
+
+    const modal = this.getAttribute('data-modal');
+    openModal(modal);
+  });
+}
 
 
 /* CHART GENERATOR */
