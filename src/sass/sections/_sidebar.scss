@@ -10,12 +10,6 @@
   transition: all .5s ease-in-out;
 }
 
-@media (max-width: 768px) {
-  .sidebar, #sidebar {
-    width: 100%;
-  }
-}
-
 #sidebar.active {
   width: 70px;
 
@@ -40,5 +34,19 @@
         overflow: hidden;
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar, #sidebar {
+    width: 100%;
+  }
+  .menu {
+    &__item {
+      width: 100%;
+    }
+  }
+  .hamburger {
+    margin: 10px;
   }
 }
