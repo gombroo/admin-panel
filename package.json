@@ -19,11 +19,6 @@
         "build:autoprefixer": "globstar autoprefixer-cli \"dist/css/*.css\"",
         "build-dev": "npm-run-all build-dev:sass build:autoprefixer",
         "build-dev:sass": "node-sass --output-style expanded --source-map true -o dist/css src/sass",
-        "build-docs": "npm-run-all build:docs:* test",
-        "build:docs:clean": "mkdirp docs && rm -r docs && mkdirp docs",
-        "build:docs:copy": "copyfiles -a -u 1 -e \"**/sass/**/*\" -e \"**/.gitkeep\" \"src/**/*\" docs",
-        "build:docs:sass": "node-sass --output-style compact -o docs/css src/sass",
-        "build:docs:autoprefixer": "globstar autoprefixer-cli \"docs/css/*.css\"",
         "build:docs:minify": "npm-run-all build:minify:* build:tinypng test",
         "build:minify:html": "minify dist/index.html > docs/index.html",
         "build:minify:css": "minify dist/css/style.css > docs/css/style.css",
@@ -38,6 +33,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "flatpickr": "^4.6.2",
         "json-server": "^0.15.1",
         "save": "^2.4.0"
     },
@@ -46,7 +42,6 @@
         "browser-sync": "^2.26.3",
         "copyfiles": "^2.1.0",
         "eslint": "^5.14.1",
-        "flatpickr": "^4.6.3",
         "globstar": "^1.0.0",
         "minify": "^5.1.0",
         "mkdirp": "^0.5.1",
